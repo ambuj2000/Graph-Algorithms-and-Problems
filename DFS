@@ -1,4 +1,4 @@
-'''cpp
+```cpp
 // This is the dfs code dfs->follows the recursive approach first goes in depth forms the recursive tree and comes back
 
 #include <bits/stdc++.h>
@@ -38,4 +38,4 @@ int main() {
 
 
 
-'''
+```
