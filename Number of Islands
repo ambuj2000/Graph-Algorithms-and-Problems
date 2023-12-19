@@ -4,7 +4,7 @@ using namespace std;
 
 
 void dfs(vector<vector<char>>&grid,int row,int col){
-        grid[row][col]='0';
+        grid[row][col]='0';      // Transform land into water so we don't revisit this cell.
         int drow[]={-1,-1,-1,0,0,1,1,1};
         int dcol[]={-1,0,1,-1,1,-1,0,1};
         for(int i=0;i<8;i++){
