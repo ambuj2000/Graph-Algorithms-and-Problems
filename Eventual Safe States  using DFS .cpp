@@ -41,7 +41,7 @@ public:
 		int pathVis[V] = {0};
 		int check[V] = {0};
 		vector<int> safeNodes;
-		for (int i = 0; i < V; i++) {
+		for (int i = 0; i < V; i++) {//for multiple components
 			if (!vis[i]) {
 				dfsCheck(i, adj, vis, pathVis, check);
 			}
