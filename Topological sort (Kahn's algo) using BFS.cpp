@@ -1,4 +1,5 @@
 //topo sort means if graph has directed edge between u->v, then u will always come before u
+//Topo sort is the linear ordering of 'n' vertices(remember::strictly the size of topo sort should be of n)
 // this can be solve using indegree concept also with help of kahn's algo - abit modification of BFS
 //here sorting happens based on number of indegrees a node has 
 
