@@ -22,6 +22,24 @@
 // distance of node 0 is 0 and the shortest 
 // distance from node 1 is 9.
 
+// Example 2:
+// V = 3, E = 3
+
+// adj = {{{1, 1}, {2, 6}}, {{2, 3}, {0, 1}}, {{1, 3}, {0, 6}}}
+
+// S = 2
+
+// Output:
+
+// 4 3 0
+
+// Explanation: 
+
+// For nodes 2 to 0, we can follow the path 2-1-0. This has a distance of 1+3 = 4, whereas the path 2-0 has a distance of 6. 
+// So, the Shortest path from 2 to 0 is 4.
+
+// The shortest distance from 0 to 1 is 1.
+
 
 class Solution
 {
