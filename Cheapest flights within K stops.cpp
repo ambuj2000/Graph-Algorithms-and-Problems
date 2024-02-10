@@ -42,8 +42,8 @@ class Solution {
             
             if(stops>K)continue;
             
-            for(auto it:adj[node]){
-                int adjNode=it.first;
+            for(auto it:adj[node]){//yaha adjnode ka it.first dekh rahe hai aur it.second so don't get confused                              
+                int adjNode=it.first;  //{adjnode,{it.first, it.second}}//yaha maine example k liye likh diya hai
                 int edw=it.second;//edgeweight
                 
                 if(dis+edw<dist[adjNode] && stops<=K){
