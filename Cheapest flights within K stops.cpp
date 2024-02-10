@@ -26,7 +26,7 @@ class Solution {
     int CheapestFLight(int n, vector<vector<int>>& flights, int src, int dst, int K)  {
         vector<pair<int,int>>adj[n];
         for(auto it:flights){
-            adj[it[0]].push_back({it[1],it[2]});
+            adj[it[0]].push_back({it[1],it[2]});//{src,{dest,cost}}
         }
         queue<pair<int,pair<int,int>>>q;//queue-{stops,{node,dist}}(instead of pq because pq stores in form of sorting the dist)
         q.push({0,{src,0}});
