@@ -19,7 +19,8 @@ class Solution {
 	for(int k=0;k<n;k++){
 	    for(int i=0;i<n;i++){
 	        for(int j=0;j<n;j++){
-        matrix[i][j]=min(matrix[i][j],matrix[i][k]+matrix[k][j]);
+        matrix[i][j]=min(matrix[i][j],matrix[i][k]+matrix[k][j]);//meaning ki  e.g 1-3 ka distance first 0 include karenge path mein like 1-0 + 0-3 same way
+			//2-3 ka distance so 2-0+0-3 same way for all pairs we need to calculate.
 	    }
 	}
 	}
