@@ -1,8 +1,19 @@
 //Prims algo helps to find MST(minimum sum of edges such that every node is reachable considering n nodes and n-1 edges)
 
-// Given a weighted, undirected and connected graph of V vertices and E edges. The task is to find the sum of weights of the edges of the Minimum Spanning Tree.
+// Given a weighted, undirected and connected graph of V vertices and E edges.
+//The task is to find the sum of weights of the edges of the Minimum Spanning Tree.
 // Given adjacency list adj as input parameters .
-// Here adj[i] contains vectors of size 2, where the first integer in that vector denotes the end of the edge and the second integer denotes the edge weight.
+// Here adj[i] contains vectors of size 2, where the first integer in that vector denotes the end of the edge 
+//and the second integer denotes the edge weight.
+
+
+
+// To clarify, an MST is a tree that spans all the vertices of the graph, hence the term "spanning tree." 
+// It's "minimum" in the sense that the total weight of the edges in the tree is minimized, but it
+// still maintains the property of a tree, which means it has no cycles.
+
+// If an MST did contain a cycle, it wouldn't be a tree, as trees, by definition, cannot contain cycles.
+// Therefore, by definition, an MST does not form a cycle
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -27,7 +38,7 @@ public:
 			int wt = it.first;
 
 			if (vis[node] == 1) continue;
-			// add it to the mst
+			// add it to the mst and we do not add it if it forms cycle or lies in differnt component
 			vis[node] = 1;
 			sum += wt;
 			for (auto it : adj[node]) {
