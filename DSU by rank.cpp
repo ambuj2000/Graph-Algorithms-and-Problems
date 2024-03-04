@@ -27,7 +27,7 @@ public:
     void unionByRank(int u, int v) {
         int ulp_u = findUPar(u);
         int ulp_v = findUPar(v);
-        if (ulp_u == ulp_v) return;
+        if (ulp_u == ulp_v) return;//meaning both lies in same component
         if (rank[ulp_u] < rank[ulp_v]) {//connect smaller component to larger component
           //inorder to keep the relative height of graph small
             parent[ulp_u] = ulp_v;
