@@ -33,7 +33,7 @@ public:
         }
         else {
             parent[ulp_v] = ulp_u;
-            rank[ulp_u]++;
+            rank[ulp_u]++;//rank increases with height of graph
         }
     }
 };
