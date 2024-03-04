@@ -19,8 +19,9 @@ public:
     }
 
     int findUPar(int node) {
-        if (node == parent[node])
-            return node;
+        if (node == parent[node])//path compression  ( 1==parent[1]) base case then all nodes will be connected to 1 
+                return node;    //and 1 will be the parent for all nodes.
+        
         return parent[node] = findUPar(parent[node]);
     }
 
