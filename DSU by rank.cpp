@@ -1,3 +1,7 @@
+// The Disjoint Set Union data structure has two main operations:
+
+// Union(x, y): Merge the sets containing elements x and y into a single set.
+// Find(x): Find the representative (also called the "parent" or "root") of the set containing element x.
 
 
 
