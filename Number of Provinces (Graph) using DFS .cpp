@@ -32,6 +32,7 @@ class Solution {
         for(int i = 0;i<V;i++) {
             // if the node is not visited
             if(!vis[i]) {//we will only check for 1st visited node and then prblm is done if it not vis then increase the cnt and run dfs
+              //again continue this for next unvisited component and then cnt will store the ans
                 // counter to count the number of provinces 
                 cnt++;
                dfs(i, adjLs, vis); 
