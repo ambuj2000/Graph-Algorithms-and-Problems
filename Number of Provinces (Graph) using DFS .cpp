@@ -2,7 +2,21 @@
 using namespace std;
 
 class Solution {
-  private:
+  private: 
+    // dfs traversal function 
+    void dfs(int node, vector<int> adjLs[], int vis[]) {
+        // mark the more as visited
+        vis[node] = 1; 
+        for(auto it: adjLs[node]) {
+            if(!vis[it]) {
+                dfs(it, adjLs, vis); 
+            }
+        }
+    }
+  public:
+    int numProvinces(vector<vector<int>> adj, int V) {
+        vector<int> adjLs[V]; 
+        
         // to change adjacency matrix to list 
         for(int i = 0;i<V;i++) {
             for(int j = 0;j<V;j++) {
