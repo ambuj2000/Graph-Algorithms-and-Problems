@@ -61,7 +61,7 @@ void unionn(int u,int v)
 int regionsBySlashes(vector<string>& grid) 
 {
     int n=grid.size();
-    int dots=n+1;
+    int dots=n+1;  //In this case dots are all the lines separating the box of grid for e.g=> grid of size n=3 will have 4 dots (n+1)
     
     parent=vector<int>(dots*dots+1);//resize
     rank=vector<int>(dots*dots+1);
@@ -79,8 +79,8 @@ int regionsBySlashes(vector<string>& grid)
         {
             if(i==0 or j==0 or i==dots-1 or j==dots-1)
             {
-                int cellno=i*dots+j;
-                if(cellno!=0)
+                int cellno=i*dots+j;  // connect all the boundary dots
+                if(cellno!=0)   
                 unionn(0,cellno);
             }
         }
