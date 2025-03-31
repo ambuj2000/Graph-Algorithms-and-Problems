@@ -18,6 +18,8 @@
 // 0 9
 // Explanation:
 
+0--------1 (wt-9)
+
 // The source vertex is 0. Hence, the shortest 
 // distance of node 0 is 0 and the shortest 
 // distance from node 1 is 9.
